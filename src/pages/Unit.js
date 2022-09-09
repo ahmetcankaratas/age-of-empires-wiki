@@ -1,7 +1,8 @@
 import React from "react";
+import MainBar from "../components/Units/MainBar";
 
 const Unit = () => {
-  return <div>Unit Page</div>;
+  return <MainBar />;
 };
 
 export default Unit;

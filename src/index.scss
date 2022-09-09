@@ -1,11 +1,11 @@
-@import "../src/components/Layout/styles/variables.scss";
+@import "./components//styles/variables.scss";
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: $NotoSans;
+  font-family: $MainFonts;
 }
 
 body {
