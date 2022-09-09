@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 
-import ageofempiresImage from "../../../assets/age-of-empires.jpg";
+import ageofempiresImage from "../../assets/age-of-empires.jpg";
 import classes from "./Header.module.scss";
 
 const Header = () => {

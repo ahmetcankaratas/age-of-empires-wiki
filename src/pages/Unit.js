@@ -1,8 +1,12 @@
-import React from "react";
-import MainBar from "../components/Units/MainBar";
+import React, { Fragment } from "react";
+import MainFilter from "../components/MainFilter/MainFilter";
 
 const Unit = () => {
-  return <MainBar />;
+  return (
+    <Fragment>
+      <MainFilter />
+    </Fragment>
+  );
 };
 
 export default Unit;
