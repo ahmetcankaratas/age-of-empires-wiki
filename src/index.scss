@@ -1,0 +1,14 @@
+@import "../src/components/Layout/styles/variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $NotoSans;
+}
+
+body {
+  margin: 0;
+  background-color: $dark;
+}

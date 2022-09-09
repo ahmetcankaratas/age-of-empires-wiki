@@ -1,5 +1,12 @@
-const App = () => {
-  return <div className="App">Hello World!</div>;
-};
+import { Fragment } from "react";
 
+import Header from "./components/Layout/header/Header";
+
+function App() {
+  return (
+    <Fragment>
+      <Header />
+    </Fragment>
+  );
+}
 export default App;
