@@ -1,0 +1,22 @@
+@import "../styles/variables.scss";
+
+.container {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.tableHeader {
+  font-family: $MainFonts;
+  font-size: 1.17rem;
+  font-weight: bolder;
+}
+
+.tableRow {
+  font-family: $MainFonts;
+}
+.tableCell {
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
