@@ -1,17 +1,18 @@
-import React from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Tab, Tabs } from "@mui/material";
 
 import classes from "./AgesFilter.module.scss";
+import { filterActions } from "../../../store/filter";
 
 const AgesFilter = () => {
   const [age, setAge] = useState("all");
+  const dispatch = useDispatch();
 
   const setAgeHandler = (event, newAge) => {
     setAge(newAge);
+    dispatch(filterActions.ageFilter(age));
   };
-
-  console.log(age);
 
   return (
     <Tabs

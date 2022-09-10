@@ -1,3 +1,5 @@
+import { useSelector } from "react-redux";
+
 import {
   Table,
   TableBody,
@@ -11,6 +13,8 @@ import {
 import classes from "./UnitTable.module.scss";
 
 const UnitTable = () => {
+  const units = useSelector((state) => state.filter.units);
+  
   return (
     <div className={classes.container}>
       <TableContainer component={Paper}>
@@ -32,20 +36,22 @@ const UnitTable = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            <TableRow className={classes.tableRow}>
-              <TableCell className={classes.tableCell} align="center">
-                lorem ipsum
-              </TableCell>
-              <TableCell className={classes.tableRow} align="center">
-                lorem ipsum
-              </TableCell>
-              <TableCell className={classes.tableRow} align="center">
-                lorem ipsum
-              </TableCell>
-              <TableCell className={classes.tableRow} align="center">
-                lorem ipsum
-              </TableCell>
-            </TableRow>
+            {units.map((unit) => (
+              <TableRow className={classes.tableRow} key={unit.id}>
+                <TableCell className={classes.tableCell} align="center">
+                  {unit.id}
+                </TableCell>
+                <TableCell className={classes.tableRow} align="center">
+                  {unit.name}
+                </TableCell>
+                <TableCell className={classes.tableRow} align="center">
+                  {unit.age}
+                </TableCell>
+                <TableCell className={classes.tableRow} align="center">
+                  cost
+                </TableCell>
+              </TableRow>
+            ))}
           </TableBody>
         </Table>
       </TableContainer>
