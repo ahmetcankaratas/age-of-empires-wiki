@@ -1,9 +1,13 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { createStore, applyMiddleware } from "redux";
+import createSagaMiddleware from "redux-saga";
+import rootSaga from "./sagas/rootSaga";
 
 import filterReducer from "./filter";
 
-const store = configureStore({
-  reducer: { filter: filterReducer },
-});
+const sagaMiddleware = createSagaMiddleware();
+
+const store = createStore(filterReducer, applyMiddleware(sagaMiddleware));
+
+sagaMiddleware.run(rootSaga);
 
 export default store;

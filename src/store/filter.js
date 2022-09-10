@@ -1,21 +1,26 @@
-import { createSlice } from "@reduxjs/toolkit";
-
 import mockData from "./mockData/age-of-empires-units.json";
 
-const initialFilterState = {
+const initialState = {
   units: mockData.units,
+  age: "all",
+  filteredData: null,
 };
 
-const filterSlice = createSlice({
-  name: "filter",
-  initialState: initialFilterState,
-  reducers: {
-    ageFilter(state, action) {
-      state.age = action.payload;
-    },
-  },
-});
+const filterReducer = (state = initialState, action) => {
+  if (action.type === "AGE") {
+    return {
+      ...state,
+      age: action.payload,
+    };
+  }
 
-export const filterActions = filterSlice.actions;
+  if (action.type === "SET_FILTERED") {
+    return {
+      ...state,
+      filteredData: action.payload,
+    };
+  }
+  return state;
+};
 
-export default filterSlice.reducer;
+export default filterReducer;

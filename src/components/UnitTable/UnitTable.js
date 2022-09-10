@@ -13,8 +13,18 @@ import {
 import classes from "./UnitTable.module.scss";
 
 const UnitTable = () => {
-  const units = useSelector((state) => state.filter.units);
-  
+  const units = useSelector((state) =>
+    state.filteredData ? state.filteredData : state.units
+  );
+
+  const mapObject = (param) => {
+    let string = "";
+    Object.keys(param).map(
+      (keyName) => (string += `${keyName} : ${param[keyName]}  `)
+    );
+    return string;
+  };
+
   return (
     <div className={classes.container}>
       <TableContainer component={Paper}>
@@ -48,7 +58,8 @@ const UnitTable = () => {
                   {unit.age}
                 </TableCell>
                 <TableCell className={classes.tableRow} align="center">
-                  cost
+                  {(unit.cost === null || undefined) && "no cost"}
+                  {unit.cost && mapObject(unit.cost)}
                 </TableCell>
               </TableRow>
             ))}

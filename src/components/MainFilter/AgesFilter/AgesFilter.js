@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { Tab, Tabs } from "@mui/material";
 
 import classes from "./AgesFilter.module.scss";
-import { filterActions } from "../../../store/filter";
 
 const AgesFilter = () => {
   const [age, setAge] = useState("all");
@@ -11,7 +10,10 @@ const AgesFilter = () => {
 
   const setAgeHandler = (event, newAge) => {
     setAge(newAge);
-    dispatch(filterActions.ageFilter(age));
+    dispatch({
+      type: "AGE_FILTER",
+      payload: newAge,
+    });
   };
 
   return (
@@ -22,10 +24,10 @@ const AgesFilter = () => {
       centered
     >
       <Tab className={classes.tab} value="all" label="All" />
-      <Tab className={classes.tab} value="dark" label="Dark" />
-      <Tab className={classes.tab} value="feudal" label="Feudal" />
-      <Tab className={classes.tab} value="castle" label="Castle" />
-      <Tab className={classes.tab} value="imperial" label="Imperial" />
+      <Tab className={classes.tab} value="Dark" label="Dark" />
+      <Tab className={classes.tab} value="Feudal" label="Feudal" />
+      <Tab className={classes.tab} value="Castle" label="Castle" />
+      <Tab className={classes.tab} value="Imperial" label="Imperial" />
     </Tabs>
   );
 };
