@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 import rootSaga from "./sagas/rootSaga";
 
-import filterReducer from "./filter";
+import filterReducer from "./filterReducer";
 
 const sagaMiddleware = createSagaMiddleware();
 
