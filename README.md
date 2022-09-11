@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Age Of Empires Wiki
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Our project is built on ReactJS.In homepage we show summary of project. In unit page we allow people to use special filters for customize their result. If users want to see detail in unit page, can click the unit name and examine detail of the unit which include lots of specific information. For storing our user data in app wide state we use Redux-Saga as our state management tool. For deployment Suge.sh has been used and the link to the live project can be found at bottom.
 
-## Available Scripts
+LiveURL: https://ahmetcankaratas-ageofempires.surge.sh/units
 
-In the project directory, you can run:
+## **🔎 Technologies**
 
-### `npm start`
+- ReactJS
+- Redux
+- Redux-Saga
+- SASS
+- MUI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📷 Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Main Page
+![main](https://user-images.githubusercontent.com/53529387/189534588-c65ef657-8641-4cda-b2ec-5a51f8d919d2.JPG)
 
-### `npm test`
+Unit
+![body-1](https://user-images.githubusercontent.com/53529387/189534604-43086c67-beb2-4705-82b7-46ce629a103b.JPG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![body-2](https://user-images.githubusercontent.com/53529387/189534617-32099a4e-7f6b-45e3-a7d6-8942937cd6da.JPG)
 
-### `npm run build`
+UnitDetails
+![detail](https://user-images.githubusercontent.com/53529387/189534634-b0454ecc-b739-4078-9c3b-182a1937e6d0.JPG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A step by step guide that will tell you how to get the development environment up and running.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+git clone https://github.com/ahmetcankaratas/age-of-empires-wiki/
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Install dependencies
 
-## Learn More
+```
+cd age-of-empires-wiki
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Build and run the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
 
-### Code Splitting
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
 
-### Analyzing the Bundle Size
+Navigate to `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# License
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MİT](https://choosealicense.com/licenses/mit/)
