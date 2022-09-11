@@ -1,7 +1,7 @@
-import React from "react";
+import WikiSummary from "../components/WikiSummary/WikiSummary";
 
 const Home = () => {
-  return <div>Home Page</div>;
+  return <WikiSummary />;
 };
 
 export default Home;
