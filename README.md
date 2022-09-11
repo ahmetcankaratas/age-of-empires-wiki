@@ -2,7 +2,7 @@
 
 Our project is built on ReactJS.In homepage we show summary of project. In unit page we allow people to use special filters for customize their result. If users want to see detail in unit page, can click the unit name and examine detail of the unit which include lots of specific information. For storing our user data in app wide state we use Redux-Saga as our state management tool. For deployment Suge.sh has been used and the link to the live project can be found at bottom.
 
-LiveURL: https://ahmetcankaratas-ageofempires.surge.sh/units
+LiveURL: https://ahmetcankaratas-ageofempires.surge.sh
 
 ## **🔎 Technologies**
 
