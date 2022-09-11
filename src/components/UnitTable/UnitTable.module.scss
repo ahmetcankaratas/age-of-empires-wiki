@@ -3,24 +3,25 @@
 .container {
   max-width: 60rem;
   width: 90%;
+  min-width: 600px;
   margin: 2rem auto;
 }
 
-.container :global .MuiTableContainer-root{
+.container :global .MuiTableContainer-root {
   background-color: rgba(245, 245, 245, 0.966);
 }
 
 .tableHeader {
   font-family: $MainFonts;
-  font-size: 1.20rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   background-color: darken($primary, 15%);
-  color: $light
+  color: $light;
 }
 
 .tableRow {
   font-family: $MainFonts;
-  font-size: 1.10rem;
+  font-size: 1.1rem;
 }
 .tableCell {
   margin: 1rem;
@@ -29,5 +30,5 @@
 }
 
 tr:hover {
-  background-color: darken($primary, 5%)
+  background-color: darken($primary, 5%);
 }
