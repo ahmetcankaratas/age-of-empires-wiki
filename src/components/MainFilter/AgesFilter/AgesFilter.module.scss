@@ -9,3 +9,11 @@
   font-family: $MainFonts;
   color: $light;
 }
+
+.tabs :global .MuiTabs-indicator {
+  background-color: darken($primary, 20%);
+}
+
+.tabs :global .MuiTab-textColorPrimary {
+  color: $light;
+}

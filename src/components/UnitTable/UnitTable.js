@@ -32,13 +32,13 @@ const UnitTable = () => {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell className={classes.tableHeader} align="center">
+              <TableCell className={classes.tableHeader} align="left">
                 Id
               </TableCell>
               <TableCell className={classes.tableHeader} align="center">
                 Name
               </TableCell>
-              <TableCell className={classes.tableHeader} align="center">
+              <TableCell className={classes.tableHeader} align="left">
                 Age
               </TableCell>
               <TableCell className={classes.tableHeader} align="center">
@@ -49,7 +49,7 @@ const UnitTable = () => {
           <TableBody>
             {units.map((unit) => (
               <TableRow className={classes.tableRow} key={unit.id}>
-                <TableCell className={classes.tableCell} align="center">
+                <TableCell className={classes.tableCell} align="left">
                   {unit.id}
                 </TableCell>
                 <TableCell className={classes.tableRow} align="center">
@@ -57,7 +57,7 @@ const UnitTable = () => {
                     {unit.name}
                   </Link>
                 </TableCell>
-                <TableCell className={classes.tableRow} align="center">
+                <TableCell className={classes.tableRow} align="left">
                   {unit.age}
                 </TableCell>
                 <TableCell className={classes.tableRow} align="center">

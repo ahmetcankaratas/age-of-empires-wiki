@@ -1,6 +1,16 @@
+@import "../../styles/variables.scss";
+
 .container {
   display: flex;
   align-items: center;
+}
+
+.container :global .MuiCheckbox-colorPrimary {
+  color: $primary;
+}
+
+.container :global .MuiCheckbox-colorSecondary {
+  color: $light;
 }
 
 .label {

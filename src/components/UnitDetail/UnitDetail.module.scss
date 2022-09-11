@@ -6,17 +6,28 @@
   margin: 2rem auto;
 }
 
+.container :global .MuiTableContainer-root {
+  background-color: rgba(245, 245, 245, 0.966);
+}
+
 .tableHeader {
   font-family: $MainFonts;
-  font-size: 1.17rem;
+  font-size: 1.2rem;
   font-weight: bolder;
+  background-color: darken($primary, 15%);
+  color: $light;
 }
 
 .tableRow {
   font-family: $MainFonts;
+  font-size: 1.1rem;
 }
 .tableCell {
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
+}
+
+tr:hover {
+  background-color: darken($primary, 5%);
 }
