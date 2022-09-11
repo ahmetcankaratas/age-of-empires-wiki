@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 import {
   Table,
@@ -52,7 +53,9 @@ const UnitTable = () => {
                   {unit.id}
                 </TableCell>
                 <TableCell className={classes.tableRow} align="center">
-                  {unit.name}
+                  <Link className="unitLink" to={`/details/${unit.id}`}>
+                    {unit.name}
+                  </Link>
                 </TableCell>
                 <TableCell className={classes.tableRow} align="center">
                   {unit.age}

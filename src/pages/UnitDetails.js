@@ -1,7 +1,12 @@
-import React from "react";
+import UnitDetail from "../components/UnitDetail/UnitDetail";
+import { StyledEngineProvider } from "@mui/material";
 
 const UnitDetails = () => {
-  return <div>Unit Details Page</div>;
+  return (
+    <StyledEngineProvider injectFirst>
+      <UnitDetail />
+    </StyledEngineProvider>
+  );
 };
 
 export default UnitDetails;
